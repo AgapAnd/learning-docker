@@ -1,5 +1,5 @@
 @echo off
-echo "Hello World" application with Maven and Docker
+echo "Hello World application with Maven and Docker"
 
 
 echo Step 1. Checking files...
