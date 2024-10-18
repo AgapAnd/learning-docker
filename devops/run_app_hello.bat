@@ -1,5 +1,5 @@
 @echo off
-echo "Hello World application with Maven and Docker"
+echo "Hello World" application with Maven and Docker
 
 
 echo Step 1. Checking files...
@@ -21,15 +21,20 @@ if not exist Dockerfile (
 	goto end
 )
 
+if not exist docker-compose.yml (
+	echo File "docker-compose.yml" not found
+	goto end
+)
+
 
 echo Step 2. Making a docker image...
 
-docker build -t learning-docker-project .
+docker-compose build
 
 
-echo Step 3. Running dicker image...
+echo Step 3. Running docker image...
 
-docker run learning-docker-project
+docker-compose up
 
 
 : end
