@@ -2,7 +2,7 @@
 cls
 echo "Hello World" application
 echo.
-echo Step 1. Checking necessary conditions...
+echo Step 1. Checking necessary conditions for running app...
 
 if not exist ../application/src/ru/agapov/app/Hello.java (
 	echo File "Hello.java" not found
